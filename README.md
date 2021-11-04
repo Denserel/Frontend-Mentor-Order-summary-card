@@ -34,5 +34,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@Denserel](https://www.frontendmentor.io/profile/Denserel)
+- Frontend Mentor - [Denserel](https://www.frontendmentor.io/profile/Denserel)
 
