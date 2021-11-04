@@ -1,0 +1,116 @@
+/* ---------- Google Font ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* ------------ Variables ---------- */
+:root{
+    /* ---------- Colours -------------- */
+    /* Base Colour */
+    --base-colour:225;
+
+    /* HSL colours */
+    --primary-colour-background: hsl(var(--base-colour), 100%, 99%);
+    --primary-colour-light: hsl(var(--base-colour), 100%, 97%);
+    --primary-colour-dark: hsl(var(--base-colour),86%, 45%);
+    --text-colour: hsl(var(--base-colour), 17%, 58%);
+    --text-colour-heading: hsl(var(--base-colour), 17%, 36%); 
+    --white-colour: #fff;
+
+    /* ----------- Font and Typography ------------ */
+    --body-font: 'Red Hat Display', sans-serif;
+    --normal-font-size: 1rem;
+    --header-font-size: 1.5rem;
+}
+
+/* ------------- Base -------------- */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--text-colour);
+    background: url("../images/pattern-background-mobile.svg");
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ------------ Reused css -------------- */
+.grid{
+    display: grid;
+    row-gap: 1rem;
+}
+
+.container{
+    justify-items: center;
+    margin: 2rem;
+}
+
+.button{
+    background: var(--primary-colour-dark);
+    color: var(--primary-colour-light);
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 1rem 10px rgba(0, 0, 0, 0.16);
+}
+
+.heading{
+    color: var(--text-colour-heading);
+    font-weight: 900;
+}
+
+/* --------------- Card css --------------- */
+.card-content{
+    background: var(--primary-colour-background);
+    text-align: center;
+    max-width: 370px;
+    min-width: 309px;
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 10px rgba(0, 0, 0, 0.16);
+}
+
+.card-content a{
+    font-weight: 700;
+}
+
+.card-hero-illustration{
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.card-body{
+    padding: 1.5rem;
+}
+
+.card-plan{
+    padding: 1rem;
+    background: var(--primary-colour-light);
+    border-radius: 1rem;
+    align-items: center;
+    grid-template: 1fr / repeat(3, 1fr);
+    column-gap: 0.5rem;
+}
+
+.card-cancelorder{
+    color: var(--text-colour);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 720px) {
+    body{
+        background: url("../images/pattern-background-desktop.svg");
+    }
+}
+/* -------------- Frontend Mentor css ------------ */
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(225, 45%, 44%); 
+}
