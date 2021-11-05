@@ -13,6 +13,7 @@
     --primary-colour-dark: hsl(var(--base-colour),86%, 45%);
     --text-colour: hsl(var(--base-colour), 17%, 58%);
     --text-colour-heading: hsl(var(--base-colour), 17%, 36%); 
+    --shadow: hsla(var(--base-colour), 0%, 0%, 0.16);
     --white-colour: #fff;
 
     /* ----------- Font and Typography ------------ */
@@ -57,7 +58,7 @@ img{
     text-decoration: none;
     padding: 1rem;
     border-radius: 0.7rem;
-    box-shadow: 0 1rem 10px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 1rem 10px var(--shadow);
 }
 
 .heading{
@@ -72,7 +73,7 @@ img{
     max-width: 370px;
     min-width: 309px;
     border-radius: 1.5rem;
-    box-shadow: 0 1rem 10px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 1rem 10px var(--shadow);
 }
 
 .card-content a{
